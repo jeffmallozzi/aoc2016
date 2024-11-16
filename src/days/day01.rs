@@ -2,7 +2,7 @@ use crate::{Solution, SolutionPair};
 use rfd::FileDialog;
 use std::collections::HashSet;
 use std::fs::read_to_string;
-use std::hash::{DefaultHasher, Hash, Hasher};
+use std::hash::Hash;
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -10,8 +10,6 @@ pub fn solve() -> SolutionPair {
     // Your solution here...
     let input_path = FileDialog::new().pick_file().expect("File Path Error");
     let input = read_to_string(input_path).expect("String Error");
-
-    println!("{input}");
 
     let sol1: i32 = part1(&input);
     let sol2: i32 = part2(&input);
