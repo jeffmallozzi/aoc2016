@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 itertools = "0.13.0"
+md5 = "0.7.0"
 rfd = "0.15.0"
